@@ -3,6 +3,8 @@ toga-core
 
 The common base for all backends in the `Toga widget toolkit`_.
 
+** Toga requires Python 3 **
+
 This package isn't much use by itself; it needs to be combined with
 a platform specific backend:
 
