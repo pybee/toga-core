@@ -1,9 +1,15 @@
+import warnings
+
 class Font:
     """
     A `Font` is a font family (e.g. "Helvetica") and a size (e.g. 15) that can
     be applied to widgets.
     """
     def __init__(self, family, size):
+        if family == "Comic Sans MS":
+            warnings.warn("Not a chance.")
+            family = "Arial"
+
         self._family = family
         self._size = size
         self.create()
